@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro a Less y Handlebars</title>
     <link rel="stylesheet" href="src/less/style.less" />
 </head>
+
 <body>
-   {{>Header titulo="Segundo"}}
-   <section class="hero">
+    
+    <section class="hero">
         <picture>
             <source srcset="https://picsum.photos/id/274/1300/720" media="(min-width:1025px)" />
             <source srcset="https://picsum.photos/id/274/1024/640" media="(min-width:700px)" />
@@ -18,54 +20,82 @@
             <h2>Haga Click Aquí</h2>
             <a href="#" class="primary-btn">Comprar</a>
         </div>
-   </section>
-   <section class="container price-holder">
-        <div>Esto debe estar full centrado</div>
-   </section>
-   <section class="container">
-    <h2>Precios</h2>
-    <section class="price-holder">
-        <div data-role="card" class="card">
-                    <div data-role="card-header" class="card-header">
-                        <img src="https://placehold.co/320x200" alt="Card 1" />
-                    </div>
-                    <div data-role="card-body">
-                        <h3>Plan A</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Aperiam quod rem.</p>
-                        <em>L1,000.00</em>
-                    </div>
-                    <div data-role="card-footer">
-                        <a href="#addToCart">Subscribirse</a>
-                    </div>
-                </div>
-                <div data-role="card" class="card">
-                    <div data-role="card-header" class="card-header">
-                        <img src="https://placehold.co/320x320" alt="Card 2" />
-                    </div>
-                    <div data-role="card-body" class="suggested">
-                        <h3>Plan B</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
-                        <em>L5,000.00</em>
-                    </div>
-                    <div data-role="card-footer" class="suggested">
-                        <a href="#addToCart">Subscribirse</a>
-                    </div>
-                </div>
-                <div data-role="card" class="card">
-                    <div data-role="card-header" class="card-header">
-                        <img src="https://placehold.co/320x400" alt="Card 3" />
-                    </div>
-                    <div data-role="card-body">
-                        <h3>Plan C</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
-                        <em>L10,000.00</em>
-                    </div>
-                    <div data-role="card-footer">
-                        <a href="#addToCart">Subscribirse</a>
-                    </div>
-                </div>
     </section>
-   </section>
+    <section class="container price-holder">
+        <div>Esto debe estar full centrado</div>
+    </section>
+    <section class="container">
+        <h2>Precios</h2>
+        <section class="price-holder">
+            <div data-role="card" class="card">
+                <div data-role="card-header" class="card-header">
+                    <img src="https://placehold.co/320x200" alt="Card 1" />
+                </div>
+                <div data-role="card-body">
+                    <h3>Plan A</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Aperiam quod rem.</p>
+                    <em>L1,000.00</em>
+                </div>
+                <div data-role="card-footer">
+                    <a href="#addToCart">Subscribirse</a>
+                </div>
+            </div>
+            <div data-role="card" class="card">
+                <div data-role="card-header" class="card-header">
+                    <img src="https://placehold.co/320x320" alt="Card 2" />
+                </div>
+                <div data-role="card-body" class="suggested">
+                    <h3>Plan B</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
+                    <em>L5,000.00</em>
+                </div>
+                <div data-role="card-footer" class="suggested">
+                    <a href="#addToCart">Subscribirse</a>
+                </div>
+            </div>
+            <div data-role="card" class="card">
+                <div data-role="card-header" class="card-header">
+                    <img src="https://placehold.co/320x400" alt="Card 3" />
+                </div>
+                <div data-role="card-body">
+                    <h3>Plan C</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
+                    <em>L10,000.00</em>
+                </div>
+                <div data-role="card-footer">
+                    <a href="#addToCart">Subscribirse</a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="container">
+        <section class="grid">
+            <div class="row">
+                <div class="col-12 col-m-6 col-l-4">
+                    1
+                </div>
+                <div class="col-12 col-m-6 col-l-4">
+                    2
+                </div>
+                <div class="col-12 col-m-6 col-l-4">
+                    3
+                </div>
+                <div class="col-12 col-m-6 col-l-4 offset-l-2">
+                    4
+                </div>
+                <div class="col-12 col-m-6 col-l-4 offset-m-3 offset-l-clear">
+                    5
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+
+            </div>
+        </section>
+    </section>
 </body>
+
 </html>
