@@ -27,46 +27,53 @@
     <section class="container">
         <h2>Precios</h2>
         <section class="price-holder">
-            <div data-role="card" class="card">
-                <div data-role="card-header" class="card-header">
-                    <img src="https://placehold.co/320x200" alt="Card 1" />
-                </div>
-                <div data-role="card-body">
-                    <h3>Plan A</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Aperiam quod rem.</p>
-                    <em>L1,000.00</em>
-                </div>
-                <div data-role="card-footer">
-                    <a href="#addToCart">Subscribirse</a>
-                </div>
-            </div>
-            <div data-role="card" class="card">
-                <div data-role="card-header" class="card-header">
-                    <img src="https://placehold.co/320x320" alt="Card 2" />
-                </div>
-                <div data-role="card-body" class="suggested">
-                    <h3>Plan B</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
-                    <em>L5,000.00</em>
-                </div>
-                <div data-role="card-footer" class="suggested">
-                    <a href="#addToCart">Subscribirse</a>
-                </div>
-            </div>
-            <div data-role="card" class="card">
-                <div data-role="card-header" class="card-header">
-                    <img src="https://placehold.co/320x400" alt="Card 3" />
-                </div>
-                <div data-role="card-body">
-                    <h3>Plan C</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
-                    <em>L10,000.00</em>
-                </div>
-                <div data-role="card-footer">
-                    <a href="#addToCart">Subscribirse</a>
-                </div>
-            </div>
+            {{>Card
+                card_img_url="https://placehold.co/320x200?text=Card-A"
+                card_img_alt="Card-A"
+                card_title="Plan A"
+                card_detail="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem."
+                card_price="1,000.00"
+            }}
+            {{>Card
+                card_img_url="https://placehold.co/320x200?text=Card-B"
+                card_img_alt="Card-B"
+                card_title="Plan B"
+                card_detail="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem."
+                card_price="5,000.00"
+                card_body_class="suggested"
+            }}
+            {{>Card
+                card_img_url="https://placehold.co/320x200?text=Card-C"
+                card_img_alt="Card-C"
+                card_title="Plan C"
+                card_detail="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem."
+                card_price="10,000.00"
+            }}
+            {{>Card
+                card_img_url="https://placehold.co/320x200?text=Card-D"
+                card_img_alt="Card-D"
+                card_title="Plan D"
+                card_detail="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem."
+                card_price="100.00"
+            }}
+        </section>
+    </section>
+    <section class="container">
+        <section class="corkboard">
+            {{>PhotoCard
+                photo_tilt="left"
+                pin_color="red"
+                photo_url="https://picsum.photos/id/126/300/200"
+                photo_alt="Photo 1"
+                photo_caption="Photo of Picsum 1"
+            }}
+            {{>PhotoCard
+                photo_tilt="right-subtle"
+                pin_color="green"
+                photo_url="https://picsum.photos/id/26/300/200"
+                photo_alt="Photo 2"
+                photo_caption="Photo of Picsum 2"
+            }}
         </section>
     </section>
     <section class="container">

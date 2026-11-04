@@ -1,0 +1,118 @@
+/* El tablero de corcho */
+.corkboard {
+    width: 100%;
+    max-width: 1000px;
+    margin: 1rem auto;
+    background: #d2b48c;
+    /* Color base marrón claro/arena */
+    background-image:
+        radial-gradient(rgba(0, 0, 0, 0.15) 15%, transparent 16%),
+        radial-gradient(rgba(0, 0, 0, 0.15) 15%, transparent 16%);
+    background-size: 8px 8px;
+    background-position: 0 0, 4px 4px;
+    /* Simulación de textura rugosa de corcho */
+    padding: 60px 40px;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 15px solid #6e473b;
+    /* Marco de madera */
+    border-radius: 4px;
+
+    /* Flexbox o Grid para distribuir las fotos simulando desorden */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+    .photo-card {
+        position: relative;
+        background: #fdfdfd;
+        padding: 15px 15px 30px 15px;
+        /* Espacio extra abajo para el texto */
+        margin: 10px;
+        width: 200px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0s;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #ddd;
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        &:hover {
+            transform: rotate(0deg) scale(1.1);
+            /* Se endereza y agranda ligeramente */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            z-index: 10;
+            /* Se superpone ante las demás */
+            cursor: pointer;
+        }
+    }
+}
+
+/* --- Clases de Inclinación para dar la sensación de aleatoriedad --- */
+.tilt-left {
+    transform: rotate(-6deg);
+}
+
+.tilt-right {
+    transform: rotate(5deg);
+}
+
+.tilt-left-subtle {
+    transform: rotate(-3deg);
+}
+
+.tilt-right-subtle {
+    transform: rotate(4deg);
+}
+
+/* --- Estilo de los Pines (Pushpins) --- */
+.pin {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        top: 3px;
+        left: 3px;
+    }
+}
+/* Variaciones de colores para los pines */
+.red-pin {
+    background: linear-gradient(135deg, #ff4d4d, #b30000);
+}
+
+.blue-pin {
+    background: linear-gradient(135deg, #3399ff, #0052cc);
+}
+
+.green-pin {
+    background: linear-gradient(135deg, #33cc33, #006600);
+}
+
+.yellow-pin {
+    background: linear-gradient(135deg, #ffff33, #b3b300);
+}
