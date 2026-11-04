@@ -60,20 +60,9 @@
     </section>
     <section class="container">
         <section class="corkboard">
-            {{>PhotoCard
-                photo_tilt="left"
-                pin_color="red"
-                photo_url="https://picsum.photos/id/126/300/200"
-                photo_alt="Photo 1"
-                photo_caption="Photo of Picsum 1"
-            }}
-            {{>PhotoCard
-                photo_tilt="right-subtle"
-                pin_color="green"
-                photo_url="https://picsum.photos/id/26/300/200"
-                photo_alt="Photo 2"
-                photo_caption="Photo of Picsum 2"
-            }}
+            {{#each corkboard}}
+                {{>PhotoCard }}
+            {{/each}}
         </section>
     </section>
     <section class="container">
