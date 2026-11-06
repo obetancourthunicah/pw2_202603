@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro a Less y Handlebars</title>
-    <link rel="stylesheet" href="src/less/style.less" />
+    <title>Elecciones Midterm EE. UU. 2026: El Futuro de los Centros de Datos para IA</title>
+    <link rel="stylesheet" href="src/less/landing.less" />
 </head>
 <body>
-   {{>Header titulo="Tercero"}}
+
+    {{>LandingHeader }}
+
+    <main>
+        <h2 class="section-title">Cobertura de Periodismo Ético e Independiente</h2>
+
+        <div class="grid">
+            <!-- Noticia 1: Associated Press -->
+            {{#each landingCards}}
+                {{>LandingCard}}
+            {{/each}}
+    </main>
+
+    {{>LandingFooter}}
+
 </body>
 </html>
