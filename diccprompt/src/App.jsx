@@ -1,12 +1,9 @@
-import Title from './components/Title';
+import Router from "./Router"
 
 function App() {
 
   return (
-    <>
-      <Title text="Hola Mundo"/>
-      <Title />
-    </>
+    <Router />
   )
 }
 

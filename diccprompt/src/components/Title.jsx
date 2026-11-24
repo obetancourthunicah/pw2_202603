@@ -1,7 +1,7 @@
 const Title = ( { text } )=>{
     let finalText = text ?? "Título del Componente";
     return (
-        <h1>{finalText}</h1>
+        <h1 className="large-title">{finalText}</h1>
     )
 }
 

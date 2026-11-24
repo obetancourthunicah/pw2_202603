@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary-400: #f4d58d;
+  --color-secondary-400: #333;
+  --color-accent-400: #708d81;
+}
+
+body {
+  @apply bg-black text-white;
+}
+
+
+.large-title {
+  @apply text-xl text-primary-400;
+}
