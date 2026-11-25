@@ -4,13 +4,13 @@ const SideBar = ()=>{
             <nav>
                 <ul>
                     <li>
-                        <a href>Home</a>
+                        <a href>1</a>
                     </li>
                     <li>
-                        <a href>PromptList</a>
+                        <a href>2</a>
                     </li>
                     <li>
-                        <a href>About</a>
+                        <a href>3</a>
                     </li>
                 </ul>
             </nav>

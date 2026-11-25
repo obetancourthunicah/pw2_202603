@@ -1,16 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-400: #f4d58d;
-  --color-secondary-400: #333;
-  --color-accent-400: #708d81;
+  
+  --color-primary-400: #10008b;
+  --color-secondary-400: #fff;
+  --color-accent-400: #bc7a00;
+}
+
+html {
+  min-height:0px;
+  height:100%;
 }
 
 body {
-  @apply bg-black text-white;
+  @apply p-0 m-0 min-h-0 h-full;
 }
 
+#root {
+  @apply h-full min-h-0 p-4;
+}
 
-.large-title {
-  @apply text-xl text-primary-400;
+#root .page {
+  @apply h-full w-full min-h-0 flex gap-4;
+}
+
+#root .page .page-right {
+  @apply flex-1 flex flex-col h-full gap-4;
+}
+
+#root header.page-header{
+  @apply bg-primary-400 text-secondary-400 shadow flex justify-between p-4 rounded-xl;
+}
+.sidebar {
+  @apply p-4 border-primary-400 border rounded-xl;
 }

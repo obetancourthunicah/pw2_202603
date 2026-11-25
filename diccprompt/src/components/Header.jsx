@@ -1,6 +1,6 @@
 const Header = ()=>{
     return(
-        <header>
+        <header className="page-header">
             <section className="brand">
                 <h1>Brand Nav Bar</h1>
             </section>

@@ -1,13 +1,18 @@
 import Header from  './Header';
 import SideBar from './SideBar';
 //TODO: Change to react-router Outlet component when implemented;
-import Outlet from './Outlet';
-const Page = ({children})=>{
+import {Outlet} from 'react-router';
+
+const Page = ()=>{
     return(
         <section className="page">
-            <Header />
             <SideBar />
-            <Outlet>{children}</Outlet>
+            <section className="page-right">
+                <Header />
+                <div className="border p-4 border-primary-400 rounded-xl flex-1">
+                    <Outlet/>
+                </div>
+            </section>
         </section>
     );
 }
